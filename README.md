@@ -8,6 +8,7 @@ Minimal HTML login page that uses a json file as a database
 ```bash
 touch .access_db .toAddDb .user_db
 ```
+* The above files are also available in `JSONlogin_dbfiles.zip`
 
 To prevent user from accessing a page, put this text on top of the file:
 ```php
