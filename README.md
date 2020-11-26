@@ -50,4 +50,6 @@ location ^~ /yourlocation {
 
 ```
 
+Backwards compatibility till PHP 5.3.7 provided using [password_compat](https://github.com/ircmaxell/password_compat) library
+
 WIP, more clear instructions & coming... sometime in the future :)

@@ -1,4 +1,12 @@
 <?php
+// File available at https://raw.githubusercontent.com/ircmaxell/password_compat/master/lib/password.php
+// The password.php library requires PHP >= 5.3.7 OR a version that has the $2y fix backported into it (such as RedHat provides).
+// Note that Debian's 5.3.3 version is NOT supported.
+// https://github.com/ircmaxell/password_compat
+
+if (!function_exists('password_hash'))
+	include "password.php";
+
 if (isset($_POST["usrName"]) && isset($_POST["usrPwd"]) && isset($_POST["phpMode"])) {
     $usrname = $_POST["usrName"];
     $usrpwd = $_POST["usrPwd"];
