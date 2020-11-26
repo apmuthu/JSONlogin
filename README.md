@@ -17,6 +17,11 @@ if (isset($_SESSION['login_user']) == false || empty($_SESSION['login_user'])) {
 ```
 and rename your file to ```.php```
 
+The `jLoginaze.sh` shell script just inserts the above code at the top into the file to be protected whose filename is provided as a CLI argument to it like:
+```bash
+jLoginaze.sh file_to_be_protected.php
+```
+
 If you want to protect more than just a web page, you should have something similar to this (done in Nginx):
 ```
 location ^~ /yourlocation {
@@ -44,6 +49,5 @@ location ^~ /yourlocation {
         }
 
 ```
-
 
 WIP, more clear instructions & coming... sometime in the future :)
